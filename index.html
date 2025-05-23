@@ -6,6 +6,9 @@
     <title>Document</title>
 
     <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
     <!-- Awesome Font -->
     <script src="https://kit.fontawesome.com/2369bdfdcc.js" crossorigin="anonymous"></script>
@@ -13,13 +16,19 @@
     <!-- DaisyUi CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        .font-style-sora{
+        font-family: "Sora", sans-serif;
+    }
+    </style>
 </head>
 
-<body> <!-- contain font of the website -->
-    <header class=""> <!-- contain bg-color of the banner section -->
-        <section class="lg:max-w-screen-xl lg:mx-auto mt-3 mb-3"> <!-- sets max-width and middle the banner -->
+<body class="font-style-sora"> <!-- contain font of the website -->
+    <header class="bg-gradient-to-b from-white to-gray-100"> <!-- contain bg-color of the banner section -->
+        <section class="lg:max-w-screen-xl lg:mx-auto"> <!-- sets max-width and middle the banner -->
             <!-- navbar (daisyUi) starts here-->
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 sm:px-6 py-3">
                 <div class="navbar-start">
                     <img src="images/logo-header.png" alt="navbar-image">
                 </div>
@@ -35,7 +44,8 @@
                 <div class="navbar-end">
                     <div class="dropdown lg:hidden text-lime-600">
                         <div tabindex="0" role="button" class="btn btn-ghost">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg> -->
+                            <i class="fa-solid fa-bars text-2xl content-center"></i>
                         </div>
                         <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-black">
                             <li><a>Product</a></li>
@@ -56,10 +66,18 @@
             <hr class="lg:hidden text-green-600 opacity-50">
 
             <!-- banner content container starts here -->
-            <div>
-                <!-- to be continued -->
+            <div class="banner-contents mt-22 flex flex-col gap-y-9 items-center">
+                <div class="banner-title font-semibold text-3xl lg:text-5xl text-gray-900 text-center">Freshness <span class="text-green-700">You Can</span> <br> <span class="text-green-700">Count</span> On, Prices <br class="lg:hidden">You’ll Love!</div>
+                <div class="banner-subtitle font-light lg:font-base lg:font-xl text-gray-900 text-center sm:w-11/12 lg:w-1/2">Shop your daily essentials at unbeatable <br class="lg:hidden"> prices. From fresh produce to pantry <br class="lg:hidden">staples, we’ve got you covered every day!</div>
+                <div class="banner-image lg:px-36 w-fit">
+                    <img src="images/hero-vegetables.png" alt="vegetables">
+                </div>
             </div>
         </section>
     </header>
+
+    <main>
+        <!-- to be continued -->
+    </main>
 </body>
 </html>
