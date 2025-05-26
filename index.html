@@ -34,7 +34,7 @@
 
 <body class="font-style-sora"> <!-- contain font of the website -->
     <header class="bg-gradient-to-b from-white to-gray-100"> <!-- contain bg-color of the banner section -->
-        <section class="lg:max-w-screen-xl lg:mx-auto"> <!-- sets max-width and middle the banner -->
+        <section class="max-w-screen-xl mx-auto"> <!-- sets max-width and middle the banner -->
             <!-- navbar (daisyUi) starts here-->
             <div class="navbar bg-base-100 px-5 lg:px-0 py-3">
                 <div class="navbar-start">
@@ -52,14 +52,13 @@
                 <div class="navbar-end">
                     <div class="dropdown lg:hidden text-lime-600">
                         <div tabindex="0" role="button" class="btn btn-ghost">
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg> -->
                             <i class="fa-solid fa-bars text-2xl content-center"></i>
                         </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-black">
+                        <!-- <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-black">
                             <li><a>Product</a></li>
                             <li><a>Services</a></li>
                             <li><a>Contact us</a></li>
-                        </ul>
+                        </ul> -->
                     </div>
                     <div class="hidden lg:flex gap-x-6 items-center">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -121,12 +120,12 @@
 
         <!-- Popular Products -->
         <section class="bg-[#EFEBE3]">
-            <div class="lg:max-w-screen-xl mx-auto px-4 py-12 lg:px-0 lg:py-36">
+            <div class="w-screen lg:max-w-screen-xl mx-auto px-4 py-12 lg:px-0 lg:py-36">
                 <h3 class="font-semibold text-[#179800] text-4xl mg-8 lg:mb-12">Popular Products</h3>
                 <!-- card & grid content container -->
                 <div class="lg:flex lg:justify-between"> <!---->
                     <!-- for card -->
-                    <div class="h-[23.5rem] mb-6 mt-8 lg:mb-0 lg:mt-0">
+                    <div class="h-[23.5rem] mb-6 mt-8 lg:mb-0 lg:mt-0 rounded-2xl">
                         <!-- daisyUi card -->
                         <div class="card w-[25rem] bg-gradient-to-br from-[#53DB3A] to-white">
                             <div class="pt-10 pl-8 pb-44">
@@ -269,28 +268,28 @@
 
         <!-- Arrival Offers -->
         <section>
-            <div class="lg:max-w-screen-xl mx-auto mt-12 mb-[17rem] lg:mt-36 lg:mb-[24rem] px-4 lg:px-0">
+            <div class="lg:max-w-screen-xl mx-auto mt-12  mb-[30rem] lg:mt-36 lg:mb-[24rem] px-4 lg:px-0">
                 <h3 class="font-semibold text-4xl text-[#179800] mb-8 lg:mb-12"> Arrival & Offers </h3>
-                <div class="container lg:flex justify-between">
+                <div class="container lg:flex lg:justify-between">
                     <!-- Dawat brand card -->
-                    <div class="w-screen lg:w-[48rem] bg-[#115414] pt-8 pl-8 pr-6 flex justify-between items-center rounded-3xl">
+                    <div class="w-fit lg:w-[45rem] bg-[#115414] pt-6 lg:pt-8 pl-4 lg:pl-8 pr-3 lg:pr-6 flex justify-between items-center rounded-3xl mb-4 lg:mb-0">
                         <div>
                             <img src="images/dawat-logo.png" alt="Dawat brand logo">
-                            <p class="font-style-poppins font-regular text-2xl text-white bg-[#63B76D] rounded-xl px-10 py-2 mt-8 mb-7">Cook Exotic Dishes</p>
-                            <h2 class="text-white font-style-poppins font-bold text-4xl">UP to <b>20% OFF</b></h2>
+                            <p class="font-style-poppins font-regular text-xs lg:text-2xl text-white bg-[#63B76D] rounded-xl px-4 lg:px-10 py-2 mt-4 lg:mt-8 mb-3 lg:mb-7 text-center">Cook Exotic Dishes</p>
+                            <h2 class="text-white font-style-poppins font-bold text-xl lg:text-4xl">UP to <b>20% OFF</b></h2>
                         </div>
                         <figure>
                             <img src="images/dawat-mock-up.png" alt="dawat_brand_product">
                         </figure>
                     </div>
                     <!-- India gate brand card -->
-                    <div class="w-[31rem] bg-[#102861] pl-6 pr-3 pt-5 pb-8 flex justify-between items-center rounded-3xl">
+                    <div class="w-fit bg-[#102861] pl-6 pr-5 lg:pr-3 pt-3 lg:pt-5 pb-4 lg:pb-8 flex gap-x-20 lg:justify-between items-center rounded-3xl">
                         <div>
                             <img src="images/india-gate-logo.png" alt="india gate logo">
-                            <p class="text-white font-style-poppins bg-[#2A4D97] font-regular text-2xl rounded-xl px-6 py-3 mt-4 mb-6">World's No. 1 Rice</p>
-                            <h2 class="text-white font-style-poppins font-bold text-4xl">UP to <b>40% OFF</b></h2>
+                            <p class="text-white font-style-poppins bg-[#2A4D97] font-regular text-xs lg:text-2xl rounded-xl px-5 lg:px-6 py-2 lg:py-3 mt-1 lg:mt-4 mb-3 lg:mb-6 text-center">World's No. 1 Rice</p>
+                            <h2 class="text-white font-style-poppins font-regular text-xl lg:text-4xl">UP to <b>40% OFF</b></h2>
                         </div>
-                        <figure>
+                        <figure class="w-[132px] lg:w-auto">
                             <img src="images/india-gate-mock-up.png" alt="india gate product">
                         </figure>
                     </div>
@@ -301,42 +300,45 @@
 
     <footer>
          <section class="bg-[#179800]">
-            <div class="lg:max-w-screen-xl mx-auto lg:h-[46rem]">
+            <div class="w-screen lg:max-w-screen-xl mx-auto px-4 lg:px-0 h-[60rem] lg:h-[42rem]">
                 <!-- Subscribe section -->
-                <div class="max-w-screen-xl bg-[#EFEBE3] py-14 pl-24 pr-28 rounded-3xl relative bottom-54">
-                    <div class="flex justify-between items-center">
-                        <figure>
+                <div class="max-w-screen-xl bg-[#EFEBE3] py-10 lg:py-14 pl-3 lg:pl-24 pr-3 lg:pr-28 rounded-2xl lg:rounded-3xl relative bottom-80 lg:bottom-52">
+                    <div class="lg:flex lg:justify-between items-center">
+                        <figure class="mb-6 lg:mb-0">
                             <img src="images/vegetable-busket.png" alt="basket full of fruits">
                         </figure>
                         <div>
-                            <h3 class="font-semibold text-4xl text-[#111111] mb-5">Get Grocery News!</h3>
-                            <p class="text-xl text-[#111111]">Exclusive training tips, ticks, product deals and more.</p>
-                            <div>
-                                <input type="email" name="email" id="Email" placeholder="Enter email...." class="w-[29rem] py-4 pl-4 my-9 rounded-lg bg-white text-[#C4C4C4]">
+                            <h3 class="text-center lg:text-start font-bold lg:font-semibold text-2xl lg:text-4xl text-[#179800] lg:text-[#111111] mb-3 lg:mb-5">Get Grocery News!</h3>
+                            <p class="text-center lg:text-start text-base lg:text-xl text-[#111111]">Exclusive training tips, ticks, product deals and more.</p>
+                            <div class="text-center lg:text-start">
+                                <input type="email" name="email" id="Email" placeholder="Enter email...." class="w-[20rem] lg:w-[29rem] py-4 pl-4 my-9 rounded-lg bg-white text-[#C4C4C4]">
                             </div>
-                            <div class="btn bg-[#179800] text-xl px-7 py-2 text-center text-white rounded-lg"> Subscribe </div>
+                            <div class="text-center lg:text-start">
+                                <button class="bg-[#179800] text-base lg:text-xl px-6 lg:px-7 py-2 text-center text-white rounded-md lg:rounded-lg"> Subscribe
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- last section -->
-                <div class="flex justify-between">
+                <div class= "block lg:flex lg:flex-row lg:justify-between relative bottom-60 lg:bottom-12">
                     <div>
                         <img src="images/logo-footer.png" alt="footer logo">
-                        <p class="w-[26rem] text-white text-xl mt-3 opacity-70">
-                            Discover a world of treats, toys, and essentials handpicked for your furry friends
+                        <p class="w-auto lg:w-[26rem] text-white text-base lg:text-xl mt-3 opacity-70">
+                            Discover a world of treats, toys, and <br class="lg:hidden"> essentials handpicked for your furry friends
                         </p>
                     </div>
-                    <div class="opacity-80">
+                    <div class="my-8 lg:my-0 opacity-80">
                         <ul class="list-none text-[#EFEBE3] text-xl">
                             <li><a>Product</a></li>
-                            <li class="my-8"><a>Services</a></li>
+                            <li class="my-5 lg:my-8"><a>Services</a></li>
                             <li><a>Contact us</a></li>
                         </ul>
                     </div>
-                    <div class="relative top-24">
+                    <div class="lg:relative lg:top-24">
                         <p class="font-medium text-[#EFEBE3] mb-3 opacity-80">Follow Us</p>
-                        <div class="text-white flex flex-row gap-7">
+                        <div class="text-white flex flex-row gap-7 text-xl">
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
                             <i class="fa-brands fa-linkedin"></i>
