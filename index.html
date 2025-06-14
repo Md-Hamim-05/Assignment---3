@@ -29,6 +29,43 @@
         .font-style-poppins{
         font-family: "Poppins", sans-serif;
         }
+
+        .banner-image{
+            animation-name: spin;
+            animation-duration: 5s;
+            animation-timing-function: ease-out;
+            animation-delay: 1s;
+            animation-iteration-count: 10;
+            animation-direction: normal;
+            /** animation-fill-mode: forwards; **/
+            /** animation-play-state: running; **/
+        }
+
+        @keyframes spin{
+            0% {
+
+            }
+
+            33% {
+                scale: 0.7;
+                transform: rotate(30deg);
+            }
+
+            50% {
+                scale: 1;
+                transform: rotate(0);
+            }
+
+            66% {
+                scale: 0.7;
+                transform: rotate(-30deg);
+            }
+
+            100% {
+                scale: 1;
+                transform: rotate(0);
+            }
+        }
     </style>
 </head>
 
@@ -74,7 +111,7 @@
 
             <!-- banner content container starts here -->
             <div class="banner-contents mt-22 flex flex-col gap-y-9 items-center">
-                <div class="banner-title font-semibold text-3xl lg:text-5xl text-gray-900 text-center">Freshness <span class="text-green-700">You Can</span> <br> <span class="text-green-700">Count</span> On, Prices <br class="lg:hidden">You’ll Love!</div>
+                <div class="animatable banner-title font-semibold text-3xl lg:text-5xl text-gray-900 text-center">Freshness <span class="text-green-700">You Can</span> <br> <span class="text-green-700">Count</span> On, Prices <br class="lg:hidden">You’ll Love!</div>
                 <div class="banner-subtitle font-light lg:font-base lg:font-xl text-gray-900 text-center sm:w-11/12 lg:w-1/2">Shop your daily essentials at unbeatable <br class="lg:hidden"> prices. From fresh produce to pantry <br class="lg:hidden">staples, we’ve got you covered every day!</div>
                 <div class="banner-image lg:px-36 w-fit">
                     <img src="images/hero-vegetables.png" alt="vegetables">
